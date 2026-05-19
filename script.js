@@ -11,17 +11,27 @@ document.addEventListener('DOMContentLoaded', () => {
         progressBar.style.width = scrolled + "%";
     });
 
-    // Mobile Menu Toggle (Simplified for now)
+    // Mobile Menu Toggle
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
     
     if (mobileToggle) {
         mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
             navLinks.classList.toggle('active');
-            // Add actual mobile menu logic if needed
-            alert('Mobile menu functionality can be expanded here.');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
         });
     }
+
+    // Close mobile menu on link click
+    const navItems = document.querySelectorAll('.nav-links a');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            mobileToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    });
 
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
@@ -45,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const revealOnScroll = () => {
         revealElements.forEach(el => {
             const elementTop = el.getBoundingClientRect().top;
-            const elementVisible = 150;
+            const elementVisible = 100;
             if (elementTop < window.innerHeight - elementVisible) {
                 el.classList.add('revealed');
             }
@@ -62,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(backToTop);
 
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
+        if (window.pageYOffset > 500) {
             backToTop.classList.add('show');
         } else {
             backToTop.classList.remove('show');
@@ -75,10 +85,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Active Nav Highlight
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navItems = document.querySelectorAll('.nav-links a');
     navItems.forEach(item => {
-        if (item.getAttribute('href') === currentPage) {
+        const href = item.getAttribute('href');
+        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
             item.classList.add('active');
+        } else {
+            item.classList.remove('active');
         }
     });
 });
