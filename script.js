@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
     
-    if (mobileToggle) {
+    if (mobileToggle && navLinks) {
         mobileToggle.addEventListener('click', () => {
             mobileToggle.classList.toggle('active');
             navLinks.classList.toggle('active');
@@ -30,7 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (mobileToggle) {
                 mobileToggle.classList.remove('active');
             }
-            navLinks.classList.remove('active');
+            if (navLinks) {
+                navLinks.classList.remove('active');
+            }
             document.body.style.overflow = 'auto';
         });
     });
@@ -39,7 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
-        question.addEventListener('click', () => {
+        if (question) {
+            question.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
             
             // Close all other items
@@ -49,7 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isActive) {
                 item.classList.add('active');
             }
-        });
+            });
+        }
     });
 
     // Reveal on Scroll with Intersection Observer
@@ -137,6 +141,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add loading state
     window.addEventListener('load', () => {
         document.body.classList.add('loaded');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (navLinks && mobileToggle && !navLinks.contains(e.target) && !mobileToggle.contains(e.target)) {
+            if (navLinks.classList.contains('active')) {
+                mobileToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            if (mobileToggle) {
+                mobileToggle.classList.remove('active');
+            }
+            if (navLinks) {
+                navLinks.classList.remove('active');
+            }
+            document.body.style.overflow = 'auto';
+        }
     });
 });
 
