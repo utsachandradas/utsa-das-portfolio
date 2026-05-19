@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-links a');
     navItems.forEach(item => {
         item.addEventListener('click', () => {
-            mobileToggle.classList.remove('active');
+            if (mobileToggle) {
+                mobileToggle.classList.remove('active');
+            }
             navLinks.classList.remove('active');
             document.body.style.overflow = 'auto';
         });
@@ -50,14 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Reveal on Scroll
+    // Reveal on Scroll with Stagger Effect
     const revealElements = document.querySelectorAll('[data-reveal]');
     const revealOnScroll = () => {
-        revealElements.forEach(el => {
+        revealElements.forEach((el, index) => {
             const elementTop = el.getBoundingClientRect().top;
             const elementVisible = 100;
             if (elementTop < window.innerHeight - elementVisible) {
-                el.classList.add('revealed');
+                setTimeout(() => {
+                    el.classList.add('revealed');
+                }, index * 50);
             }
         });
     };
@@ -93,4 +97,99 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.remove('active');
         }
     });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // Add parallax effect to hero image
+    const heroImage = document.querySelector('.hero-image img');
+    if (heroImage) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const yPos = scrolled * 0.5;
+            heroImage.style.transform = `translateY(${yPos}px)`;
+        });
+    }
+
+    // Add hover animation to cards
+    const cards = document.querySelectorAll('.service-card, .expertise-card, .testimonial-card, .audience-card, .tool-card');
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transition = 'all 0.3s ease';
+        });
+    });
+
+    // Counter animation for stats (if any)
+    const animateCounters = () => {
+        const counters = document.querySelectorAll('[data-count]');
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-count'));
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            let current = 0;
+
+            const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                    counter.textContent = Math.floor(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target;
+                }
+            };
+
+            const elementTop = counter.getBoundingClientRect().top;
+            if (elementTop < window.innerHeight) {
+                updateCounter();
+            }
+        });
+    };
+
+    window.addEventListener('scroll', animateCounters);
+
+    // Add keyboard navigation for FAQ
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            faqItems.forEach(item => item.classList.remove('active'));
+        }
+    });
+
+    // Intersection Observer for better performance
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    revealElements.forEach(el => observer.observe(el));
+
+    // Add loading animation
+    window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+    });
+
+    // Prevent layout shift on scroll
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    if (scrollbarWidth > 0) {
+        document.documentElement.style.setProperty('--scrollbar-width', scrollbarWidth + 'px');
+    }
 });
+
+// Add touch support for mobile
+document.addEventListener('touchstart', function() {}, false);
