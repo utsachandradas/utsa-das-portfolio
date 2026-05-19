@@ -52,22 +52,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Reveal on Scroll with Stagger Effect
+    // Reveal on Scroll with Intersection Observer
     const revealElements = document.querySelectorAll('[data-reveal]');
-    const revealOnScroll = () => {
-        revealElements.forEach((el, index) => {
-            const elementTop = el.getBoundingClientRect().top;
-            const elementVisible = 100;
-            if (elementTop < window.innerHeight - elementVisible) {
-                setTimeout(() => {
-                    el.classList.add('revealed');
-                }, index * 50);
-            }
-        });
+    
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
     };
 
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Initial check
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('revealed');
+                }, index * 50);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    revealElements.forEach(el => observer.observe(el));
 
     // Back to Top Button
     const backToTop = document.createElement('div');
@@ -109,51 +113,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Add parallax effect to hero image
-    const heroImage = document.querySelector('.hero-image img');
-    if (heroImage) {
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const yPos = scrolled * 0.5;
-            heroImage.style.transform = `translateY(${yPos}px)`;
-        });
-    }
-
-    // Add hover animation to cards
-    const cards = document.querySelectorAll('.service-card, .expertise-card, .testimonial-card, .audience-card, .tool-card');
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transition = 'all 0.3s ease';
+    // Add subtle hover effect to images
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.addEventListener('mouseenter', function() {
+            this.style.transition = 'all 0.35s cubic-bezier(0.4, 0, 0.2, 1)';
         });
     });
-
-    // Counter animation for stats (if any)
-    const animateCounters = () => {
-        const counters = document.querySelectorAll('[data-count]');
-        counters.forEach(counter => {
-            const target = parseInt(counter.getAttribute('data-count'));
-            const duration = 2000;
-            const increment = target / (duration / 16);
-            let current = 0;
-
-            const updateCounter = () => {
-                current += increment;
-                if (current < target) {
-                    counter.textContent = Math.floor(current);
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    counter.textContent = target;
-                }
-            };
-
-            const elementTop = counter.getBoundingClientRect().top;
-            if (elementTop < window.innerHeight) {
-                updateCounter();
-            }
-        });
-    };
-
-    window.addEventListener('scroll', animateCounters);
 
     // Add keyboard navigation for FAQ
     document.addEventListener('keydown', (e) => {
@@ -162,33 +128,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Intersection Observer for better performance
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('revealed');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    revealElements.forEach(el => observer.observe(el));
-
-    // Add loading animation
-    window.addEventListener('load', () => {
-        document.body.classList.add('loaded');
-    });
-
     // Prevent layout shift on scroll
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
     if (scrollbarWidth > 0) {
         document.documentElement.style.setProperty('--scrollbar-width', scrollbarWidth + 'px');
     }
+
+    // Add loading state
+    window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+    });
 });
 
 // Add touch support for mobile
