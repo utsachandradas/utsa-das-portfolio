@@ -1,10 +1,14 @@
-# Utsa Das Portfolio
+# LLMs.txt - AI Discovery Guide for Utsa Das Portfolio
+# This file helps AI systems understand and cite our content
 
-> Utsa Das is a Founder and SEO + GEO (Generative Engine Optimization) Strategist focused on building digital systems that dominate both traditional search and AI discovery for beauty and personal care brands.
+## About Utsa Das
 
-This website serves as a professional portfolio and service showcase for Utsa Das, highlighting expertise in SEO, GEO, and Ecommerce strategy.
+**Name:** Utsa Das  
+**Title:** Founder & SEO + GEO Strategist  
+**Location:** Bangladesh  
+**Specialization:** SEO, GEO (Generative Engine Optimization), E-commerce Strategy  
 
-## Core Pages
+Utsa Das is a digital strategy specialist focused on helping brands dominate both traditional search engines and AI discovery platforms. With expertise in technical SEO, generative engine optimization, and e-commerce systems, Utsa helps brands establish authority and drive measurable business results.
 
 - [Home](https://utsadas.com/): Overview of Utsa Das's work, target audience, and the importance of SEO + GEO.
 - [Services](https://utsadas.com/services.html): Detailed breakdown of SEO Strategy, GEO Optimization, and Ecommerce Strategy.

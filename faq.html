@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ | Utsa Das - SEO & GEO Questions</title>
     <meta name="description" content="Find answers to common questions about SEO, GEO (Generative Engine Optimization), and ecommerce strategy.">
+    <meta name="keywords" content="FAQ, SEO Questions, GEO, Generative Engine Optimization, Digital Strategy">
     <meta name="author" content="Utsa Das">
     <link rel="canonical" href="https://utsadas.com/faq.html">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://utsadas.com/faq.html">
+    <meta property="og:title" content="FAQ | Utsa Das - SEO & GEO Questions">
+    <meta property="og:description" content="Find answers to common questions about SEO, GEO, and digital strategy.">
+    <meta property="og:image" content="https://utsadas.com/assets/images/utsa.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://utsadas.com/faq.html">
+    <meta name="twitter:title" content="FAQ | Utsa Das - SEO & GEO Questions">
+    <meta name="twitter:description" content="Find answers to common questions about SEO, GEO, and digital strategy.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -17,20 +31,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Schema Markup - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://utsadas.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FAQ",
+          "item": "https://utsadas.com/faq.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="logo">Utsa Das</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="Utsa Das - Home">Utsa Das</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="faq.html" class="active">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="mobile-toggle">
+        <div class="mobile-toggle" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -125,8 +162,8 @@
         </section>
 
         <!-- Final CTA Section -->
-        <section class="cta-section" data-reveal>
-            <h2>Still have questions?</h2>
+        <section class="cta-section" data-reveal aria-labelledby="cta-title">
+            <h2 id="cta-title">Still have questions?</h2>
             <p>Reach out directly and let's discuss your digital strategy.</p>
             <div class="cta-group">
                 <a href="contact.html" class="btn btn-primary">Contact Me</a>
@@ -135,17 +172,22 @@
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="footer-grid">
             <div class="footer-section">
                 <h3>Utsa Das</h3>
                 <p>Founder | SEO & GEO Strategist</p>
+                <p style="font-size: var(--font-size-sm); margin-top: var(--space-4);">
+                    Helping brands navigate the transition from traditional search to AI-driven discovery.
+                </p>
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="about.html">About</a></li>
@@ -158,16 +200,107 @@
                 <ul>
                     <li><a href="https://www.facebook.com/share/1BEiXKVGDx/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                     <li><a href="https://www.instagram.com/utsa_chandra_das" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                     <li><a href="https://wa.me/8801861393416" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Utsa Das. All rights reserved.</p>
+            <p>&copy; 2026 Utsa Das. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <style>
+        .hero-minimal {
+            padding: var(--space-32) var(--container-padding) var(--space-12);
+            background: var(--bg-primary);
+        }
+
+        .faq-section-wrapper {
+            padding: var(--space-12) var(--container-padding);
+            margin-bottom: var(--space-20);
+        }
+
+        .faq-grid-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: var(--space-16);
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+        }
+
+        .faq-sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .faq-sidebar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+
+        .faq-nav-link {
+            text-decoration: none;
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            color: var(--text-tertiary);
+            transition: var(--transition);
+            display: block;
+            padding: var(--space-2) 0;
+            border-left: 2px solid transparent;
+            padding-left: var(--space-4);
+        }
+
+        .faq-nav-link:hover, .faq-nav-link.active {
+            color: var(--text-primary);
+            border-left-color: var(--text-primary);
+        }
+
+        .faq-category-group {
+            margin-bottom: var(--space-20);
+        }
+
+        .faq-category-title {
+            font-size: var(--font-size-2xl);
+            font-weight: 800;
+            margin-bottom: var(--space-8);
+            color: var(--text-primary);
+            letter-spacing: var(--letter-spacing-tight);
+        }
+
+        @media (max-width: 992px) {
+            .faq-grid-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .faq-sidebar {
+                position: relative;
+                top: 0;
+                margin-bottom: var(--space-12);
+            }
+            
+            .faq-sidebar ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: var(--space-6);
+            }
+            
+            .faq-nav-link {
+                padding-left: 0;
+                border-left: none;
+                border-bottom: 2px solid transparent;
+            }
+            
+            .faq-nav-link.active {
+                border-bottom-color: var(--text-primary);
+            }
+        }
+    </style>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

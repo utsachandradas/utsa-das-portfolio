@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Utsa Das - SEO & GEO Solutions</title>
-    <meta name="description" content="Explore our specialized SEO, GEO, and ecommerce strategy services designed for modern brand growth.">
+    <meta name="description" content="Explore comprehensive SEO, GEO (Generative Engine Optimization), and e-commerce strategy services designed for modern brand growth and digital transformation.">
+    <meta name="keywords" content="SEO Services, GEO Services, E-commerce SEO, Digital Strategy, Content Strategy, Technical SEO">
     <meta name="author" content="Utsa Das">
     <link rel="canonical" href="https://utsadas.com/services.html">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://utsadas.com/services.html">
+    <meta property="og:title" content="Services | Utsa Das - SEO & GEO Solutions">
+    <meta property="og:description" content="Comprehensive SEO, GEO, and e-commerce strategy services for modern brand growth.">
+    <meta property="og:image" content="https://utsadas.com/assets/images/utsa.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://utsadas.com/services.html">
+    <meta name="twitter:title" content="Services | Utsa Das - SEO & GEO Solutions">
+    <meta name="twitter:description" content="Comprehensive SEO, GEO, and e-commerce strategy services for modern brand growth.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -17,20 +31,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Schema Markup - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://utsadas.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://utsadas.com/services.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="logo">Utsa Das</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="Utsa Das - Home">Utsa Das</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="mobile-toggle">
+        <div class="mobile-toggle" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -38,31 +75,43 @@
     </nav>
 
     <main>
-        <section>
-            <h1 class="section-title" data-reveal>Our Services</h1>
-            <p class="section-subtitle" data-reveal>Comprehensive digital strategies to help your brand dominate search engines and AI discovery platforms.</p>
+        <!-- Page Header -->
+        <section aria-labelledby="page-title">
+            <h1 id="page-title" class="section-title" data-reveal>Our Services</h1>
+            <p class="section-subtitle" data-reveal>
+                Comprehensive digital strategies to help your brand dominate search engines and AI discovery platforms. 
+                From technical optimization to content strategy, we cover the full spectrum of modern SEO.
+            </p>
         </section>
 
-        <section>
+        <!-- Core Services -->
+        <section aria-labelledby="core-services-heading">
+            <h2 id="core-services-heading" class="section-title" style="font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-3xl)); margin-bottom: var(--space-12);" data-reveal>
+                Core Services
+            </h2>
             <div class="services-grid">
                 <div class="service-card" data-reveal>
                     <h3>Technical SEO Audit</h3>
-                    <p>Deep-dive analysis of your website's technical health, crawlability, and indexing performance.</p>
+                    <p>Deep-dive analysis of your website's technical health, crawlability, indexing performance, and Core Web Vitals.</p>
                     <ul>
                         <li>Crawl Budget Optimization</li>
                         <li>Site Speed & Core Web Vitals</li>
                         <li>Schema Markup Implementation</li>
                         <li>Mobile Responsiveness Audit</li>
+                        <li>XML Sitemap & Robots.txt</li>
+                        <li>Structured Data Validation</li>
                     </ul>
                 </div>
                 <div class="service-card" data-reveal>
                     <h3>GEO Strategy</h3>
-                    <p>Generative Engine Optimization to ensure your brand is cited by AI engines like ChatGPT and Gemini.</p>
+                    <p>Generative Engine Optimization to ensure your brand is cited by AI engines like ChatGPT, Perplexity, and Gemini.</p>
                     <ul>
                         <li>AI Intent Analysis</li>
                         <li>Brand Citation Building</li>
                         <li>LLM-Friendly Content Structure</li>
                         <li>Generative Search Visibility</li>
+                        <li>Entity Optimization</li>
+                        <li>AI Platform Integration</li>
                     </ul>
                 </div>
                 <div class="service-card" data-reveal>
@@ -73,16 +122,20 @@
                         <li>Semantic Content Design</li>
                         <li>Topic Authority Building</li>
                         <li>Conversion-Focused Copy</li>
+                        <li>Content Gap Analysis</li>
+                        <li>Pillar & Cluster Framework</li>
                     </ul>
                 </div>
                 <div class="service-card" data-reveal>
-                    <h3>Ecommerce SEO</h3>
-                    <p>Specialized search optimization for online stores, focusing on product visibility and sales.</p>
+                    <h3>E-commerce SEO</h3>
+                    <p>Specialized search optimization for online stores, focusing on product visibility and revenue growth.</p>
                     <ul>
                         <li>Product Page Optimization</li>
                         <li>Category Structure Design</li>
                         <li>Faceted Navigation SEO</li>
                         <li>Merchant Center Integration</li>
+                        <li>Product Feed Optimization</li>
+                        <li>Conversion Funnel Optimization</li>
                     </ul>
                 </div>
                 <div class="service-card" data-reveal>
@@ -93,16 +146,20 @@
                         <li>Backlink Intelligence</li>
                         <li>Market Share Tracking</li>
                         <li>Strategy Benchmarking</li>
+                        <li>Keyword Opportunity Analysis</li>
+                        <li>Content Performance Comparison</li>
                     </ul>
                 </div>
                 <div class="service-card" data-reveal>
                     <h3>Local SEO</h3>
                     <p>Dominating local search results to drive high-intent traffic from your target geographic areas.</p>
                     <ul>
-                        <li>GMB Optimization</li>
+                        <li>Google Business Profile Optimization</li>
                         <li>Local Citation Building</li>
-                        <li>Geo-Targeted Content</li>
-                        <li>Review Strategy</li>
+                        <li>Review Management Strategy</li>
+                        <li>Local Schema Markup</li>
+                        <li>Location-Specific Content</li>
+                        <li>Local Link Building</li>
                     </ul>
                 </div>
             </div>
@@ -118,17 +175,22 @@
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="footer-grid">
             <div class="footer-section">
                 <h3>Utsa Das</h3>
                 <p>Founder | SEO & GEO Strategist</p>
+                <p style="font-size: var(--font-size-sm); margin-top: var(--space-4);">
+                    Helping brands navigate the transition from traditional search to AI-driven discovery.
+                </p>
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="about.html">About</a></li>
@@ -141,16 +203,133 @@
                 <ul>
                     <li><a href="https://www.facebook.com/share/1BEiXKVGDx/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                     <li><a href="https://www.instagram.com/utsa_chandra_das" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                     <li><a href="https://wa.me/8801861393416" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Utsa Das. All rights reserved.</p>
+            <p>&copy; 2026 Utsa Das. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <style>
+        /* Service Process */
+        .service-process {
+            margin: var(--space-20) 0;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-8);
+            margin-top: var(--space-12);
+        }
+
+        .process-step {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .process-step:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-var(--space-2));
+        }
+
+        .step-number {
+            font-size: var(--font-size-3xl);
+            font-weight: 800;
+            color: var(--accent-primary);
+            margin-bottom: var(--space-4);
+        }
+
+        .process-step h3 {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-3);
+            color: var(--text-primary);
+        }
+
+        .process-step p {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            line-height: var(--line-height-relaxed);
+        }
+
+        /* Why Choose Section */
+        .why-choose-section {
+            margin: var(--space-20) 0;
+        }
+
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-8);
+            margin-top: var(--space-12);
+        }
+
+        .why-choose-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .why-choose-card:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-var(--space-2));
+        }
+
+        .check-icon {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+            color: white;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-xl);
+            font-weight: bold;
+            margin-bottom: var(--space-4);
+        }
+
+        .why-choose-card h3 {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-3);
+            color: var(--text-primary);
+        }
+
+        .why-choose-card p {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            line-height: var(--line-height-relaxed);
+        }
+
+        @media (max-width: 768px) {
+            .process-grid,
+            .why-choose-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .process-grid,
+            .why-choose-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

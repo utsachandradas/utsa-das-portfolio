@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Utsa Das - SEO & GEO Strategist</title>
-    <meta name="description" content="Learn about Utsa Das, a dedicated SEO and GEO Strategist focused on building sustainable digital assets.">
+    <meta name="description" content="Learn about Utsa Das, a dedicated SEO and GEO Strategist focused on building sustainable digital assets and helping brands navigate the AI-driven future of search.">
+    <meta name="keywords" content="About Utsa Das, SEO Strategist, Digital Strategy, Founder, Bangladesh">
     <meta name="author" content="Utsa Das">
     <link rel="canonical" href="https://utsadas.com/about.html">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://utsadas.com/about.html">
+    <meta property="og:title" content="About Utsa Das - SEO & GEO Strategist">
+    <meta property="og:description" content="Learn about Utsa Das, a dedicated SEO and GEO Strategist focused on building sustainable digital assets.">
+    <meta property="og:image" content="https://utsadas.com/assets/images/about.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://utsadas.com/about.html">
+    <meta name="twitter:title" content="About Utsa Das - SEO & GEO Strategist">
+    <meta name="twitter:description" content="Learn about Utsa Das, a dedicated SEO and GEO Strategist focused on building sustainable digital assets.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -17,20 +31,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Schema Markup - Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Utsa Das",
+      "url": "https://utsadas.com",
+      "jobTitle": "Founder & SEO + GEO Strategist",
+      "description": "Premium digital strategy specialist focusing on SEO, GEO (Generative Engine Optimization), and e-commerce systems.",
+      "image": "https://utsadas.com/assets/images/about.png"
+    }
+    </script>
+
+    <!-- Schema Markup - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://utsadas.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://utsadas.com/about.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="logo">Utsa Das</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="Utsa Das - Home">Utsa Das</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="about.html" class="active">About</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="mobile-toggle">
+        <div class="mobile-toggle" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -38,17 +88,23 @@
     </nav>
 
     <main>
-        <section>
+        <!-- Hero Section with Image -->
+        <section class="hero" style="padding-top: var(--space-12);" aria-labelledby="about-title">
             <div class="hero-content">
-                <h1 class="section-title" data-reveal>About Utsa Das</h1>
-                <p class="section-subtitle" data-reveal>A forward-thinking SEO and GEO Strategist with a background in computer technology and digital entrepreneurship.</p>
+                <h1 id="about-title" data-reveal>About Utsa Das</h1>
+                <p class="hero-tagline" data-reveal>
+                    A forward-thinking SEO and GEO Strategist with a background in computer technology and digital entrepreneurship. 
+                    I help ambitious brands navigate the transition from traditional search to AI-driven discovery.
+                </p>
             </div>
             <div class="hero-image" data-reveal>
                 <img src="assets/images/about.png" alt="About Utsa Das" loading="lazy" decoding="async">
             </div>
         </section>
 
-        <section class="about-details">
+        <!-- About Details Section -->
+        <section class="about-details" aria-labelledby="story-title">
+            <h2 id="story-title" class="section-title" data-reveal>My Story & Philosophy</h2>
             <div class="about-grid">
                 <div class="about-card" data-reveal>
                     <h3>Background & Vision</h3>
@@ -68,8 +124,74 @@
             </div>
         </section>
 
-        <section class="cta-section" data-reveal>
-            <h2>Work directly with a specialist</h2>
+        <!-- Expertise Section -->
+        <section class="expertise-section" aria-labelledby="expertise-title">
+            <h2 id="expertise-title" class="section-title" data-reveal>Areas of Expertise</h2>
+            <p class="section-subtitle" data-reveal>
+                Specialized knowledge across the full spectrum of digital strategy and search optimization.
+            </p>
+            <div class="expertise-grid">
+                <div class="expertise-card" data-reveal>
+                    <h3>SEO Strategy</h3>
+                    <p>
+                        Technical SEO, keyword research, content strategy, and link building. 
+                        I build comprehensive strategies that establish authority and drive sustainable organic growth.
+                    </p>
+                </div>
+                <div class="expertise-card" data-reveal>
+                    <h3>GEO Optimization</h3>
+                    <p>
+                        Generative Engine Optimization for ChatGPT, Perplexity, Gemini, and emerging AI platforms. 
+                        Ensuring your brand is cited as a primary source in AI-generated answers.
+                    </p>
+                </div>
+                <div class="expertise-card" data-reveal>
+                    <h3>E-commerce Systems</h3>
+                    <p>
+                        Product page optimization, category architecture, conversion funnel design, and marketplace strategy. 
+                        Specialized in beauty and personal care brands.
+                    </p>
+                </div>
+                <div class="expertise-card" data-reveal>
+                    <h3>Content Strategy</h3>
+                    <p>
+                        Topic cluster development, pillar content creation, and semantic content design. 
+                        Building content systems that satisfy both user intent and search algorithms.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Work With Me Section -->
+        <section class="why-work-section" aria-labelledby="why-work-title">
+            <h2 id="why-work-title" class="section-title" data-reveal>Why Work With Me</h2>
+            <div class="why-work-grid">
+                <div class="why-work-card" data-reveal>
+                    <div class="why-work-icon">🎯</div>
+                    <h3>Direct Access</h3>
+                    <p>You work directly with the strategist, not account managers. Direct communication means faster decisions and better alignment.</p>
+                </div>
+                <div class="why-work-card" data-reveal>
+                    <div class="why-work-icon">📊</div>
+                    <h3>Results-Focused</h3>
+                    <p>Every strategy is tied to measurable business outcomes. I focus on revenue impact, not vanity metrics.</p>
+                </div>
+                <div class="why-work-card" data-reveal>
+                    <div class="why-work-icon">🚀</div>
+                    <h3>Future-Ready</h3>
+                    <p>Strategies built for today's search landscape and tomorrow's AI-driven discovery. Future-proof your digital presence.</p>
+                </div>
+                <div class="why-work-card" data-reveal>
+                    <div class="why-work-icon">🔧</div>
+                    <h3>Technical Depth</h3>
+                    <p>Deep technical knowledge combined with strategic thinking. I understand both the "why" and the "how".</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" data-reveal aria-labelledby="cta-title">
+            <h2 id="cta-title">Work Directly With a Specialist</h2>
             <p>Instead of account managers, you work directly with the strategist who understands your business.</p>
             <div class="cta-group">
                 <a href="contact.html" class="btn btn-primary">Start a Collaboration</a>
@@ -78,17 +200,22 @@
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="footer-grid">
             <div class="footer-section">
                 <h3>Utsa Das</h3>
                 <p>Founder | SEO & GEO Strategist</p>
+                <p style="font-size: var(--font-size-sm); margin-top: var(--space-4);">
+                    Helping brands navigate the transition from traditional search to AI-driven discovery.
+                </p>
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="about.html">About</a></li>
@@ -101,16 +228,168 @@
                 <ul>
                     <li><a href="https://www.facebook.com/share/1BEiXKVGDx/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                     <li><a href="https://www.instagram.com/utsa_chandra_das" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                     <li><a href="https://wa.me/8801861393416" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Utsa Das. All rights reserved.</p>
+            <p>&copy; 2026 Utsa Das. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <style>
+        /* About Details */
+        .about-details {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-20) var(--space-16);
+            margin: var(--space-20) 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-8);
+            margin-top: var(--space-12);
+        }
+
+        .about-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .about-card:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-var(--space-2));
+        }
+
+        .about-card h3 {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--space-4);
+            color: var(--text-primary);
+        }
+
+        .about-card p {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            line-height: var(--line-height-relaxed);
+        }
+
+        .about-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-card li {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            margin-bottom: var(--space-3);
+            line-height: var(--line-height-relaxed);
+        }
+
+        /* Expertise Section */
+        .expertise-section {
+            margin: var(--space-20) 0;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-8);
+            margin-top: var(--space-12);
+        }
+
+        .expertise-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .expertise-card:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-var(--space-2));
+        }
+
+        .expertise-card h3 {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-4);
+            color: var(--text-primary);
+        }
+
+        .expertise-card p {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            line-height: var(--line-height-relaxed);
+        }
+
+        /* Why Work With Me Section */
+        .why-work-section {
+            margin: var(--space-20) 0;
+        }
+
+        .why-work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-8);
+            margin-top: var(--space-12);
+        }
+
+        .why-work-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .why-work-card:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-var(--space-2));
+        }
+
+        .why-work-icon {
+            font-size: var(--font-size-4xl);
+            margin-bottom: var(--space-4);
+        }
+
+        .why-work-card h3 {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-3);
+            color: var(--text-primary);
+        }
+
+        .why-work-card p {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            line-height: var(--line-height-relaxed);
+        }
+
+        @media (max-width: 768px) {
+            .about-grid,
+            .expertise-grid,
+            .why-work-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-details {
+                padding: var(--space-12) var(--container-padding);
+            }
+        }
+    </style>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
