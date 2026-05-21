@@ -6,14 +6,14 @@ This website serves as a professional portfolio and service showcase for Utsa Da
 
 ## Core Pages
 
-- [Home](https://utsadas.com/index.html.md): Overview of Utsa Das's work, target audience, and the importance of SEO + GEO.
-- [Services](https://utsadas.com/services.html.md): Detailed breakdown of SEO Strategy, GEO Optimization, and Ecommerce Strategy.
-- [About](https://utsadas.com/about.html.md): Background on Utsa Das and the mission behind his work.
-- [Skills](https://utsadas.com/skills.html.md): Technical and strategic skills including SEO tools and methodologies.
-- [Testimonials](https://utsadas.com/testimonials.html.md): Client feedback and success stories.
-- [FAQ](https://utsadas.com/faq.html.md): Frequently asked questions about SEO, GEO, and working with Utsa.
-- [Contact](https://utsadas.com/contact.html.md): Information on how to start a project or connect with Utsa.
+- [Home](https://utsadas.com/): Overview of Utsa Das's work, target audience, and the importance of SEO + GEO.
+- [Services](https://utsadas.com/services.html): Detailed breakdown of SEO Strategy, GEO Optimization, and Ecommerce Strategy.
+- [About](https://utsadas.com/about.html): Background on Utsa Das and the mission behind his work.
+- [Skills](https://utsadas.com/skills.html): Technical and strategic skills including SEO tools and methodologies.
+- [Testimonials](https://utsadas.com/testimonials.html): Client feedback and success stories.
+- [FAQ](https://utsadas.com/faq.html): Frequently asked questions about SEO, GEO, and working with Utsa.
+- [Contact](https://utsadas.com/contact.html): Information on how to start a project or connect with Utsa.
 
-## Optional
+## Additional Pages
 
-- [SEO Audit](https://utsadas.com/seo-audit.html.md): Information regarding technical SEO audits.
+- [SEO Audit](https://utsadas.com/seo-audit.html): Information regarding technical SEO audits and free audit requests.

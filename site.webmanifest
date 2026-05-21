@@ -2,13 +2,13 @@
   "name": "Utsa Das | Founder & SEO Strategist",
   "short_name": "Utsa Das",
   "description": "Premium SEO Strategist and Founder based in Bangladesh.",
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0a0a",
-  "theme_color": "#0070f3",
+  "background_color": "#ffffff",
+  "theme_color": "#0066ff",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "assets/images/favicon.ico",
       "sizes": "32x32",
       "type": "image/x-icon"
     }

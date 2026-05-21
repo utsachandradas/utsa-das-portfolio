@@ -24,9 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     handleWindowResize();
 });
 
-/**
- * Initialize scroll progress bar
- */
 function initScrollProgress() {
     const progressBar = document.createElement('div');
     progressBar.className = 'scroll-progress';
@@ -40,9 +37,6 @@ function initScrollProgress() {
     }, { passive: true });
 }
 
-/**
- * Initialize mobile menu toggle
- */
 function initMobileMenu() {
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -77,9 +71,6 @@ function initMobileMenu() {
     });
 }
 
-/**
- * Initialize FAQ accordion
- */
 function initFAQAccordion() {
     const faqItems = document.querySelectorAll('.faq-item');
     
@@ -108,9 +99,6 @@ function initFAQAccordion() {
     });
 }
 
-/**
- * Initialize reveal on scroll with Intersection Observer
- */
 function initRevealOnScroll() {
     const revealElements = document.querySelectorAll('[data-reveal]');
     
@@ -135,9 +123,6 @@ function initRevealOnScroll() {
     revealElements.forEach(el => observer.observe(el));
 }
 
-/**
- * Initialize back to top button
- */
 function initBackToTop() {
     const backToTop = document.createElement('div');
     backToTop.className = 'back-to-top';
@@ -158,9 +143,6 @@ function initBackToTop() {
     });
 }
 
-/**
- * Initialize active nav highlighting
- */
 function initActiveNav() {
     const navItems = document.querySelectorAll('.nav-links a');
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
@@ -175,9 +157,6 @@ function initActiveNav() {
     });
 }
 
-/**
- * Initialize smooth scroll for anchor links
- */
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -190,9 +169,6 @@ function initSmoothScroll() {
     });
 }
 
-/**
- * Handle window resize
- */
 function handleWindowResize() {
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
