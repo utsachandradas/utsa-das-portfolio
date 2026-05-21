@@ -138,6 +138,12 @@ a {
     transform: translateY(-4px) rotate(-45deg);
 }
 
+/* Ensure images in toolkit are contained */
+.toolkit-icon img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
 /* Mobile Menu Drawer */
 .mobile-menu {
     position: fixed;
