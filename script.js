@@ -20,9 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initLazyLoading();
 });
 
-/**
- * Initialize scroll progress bar
- */
 function initScrollProgress() {
     const progressBar = document.createElement('div');
     progressBar.className = 'scroll-progress';
@@ -36,9 +33,6 @@ function initScrollProgress() {
     }, { passive: true });
 }
 
-/**
- * Initialize mobile menu toggle with smooth animations
- */
 function initMobileMenu() {
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -90,9 +84,6 @@ function initMobileMenu() {
     });
 }
 
-/**
- * Initialize FAQ accordion with smooth animations
- */
 function initFAQAccordion() {
     const faqItems = document.querySelectorAll('.faq-item');
     
@@ -147,9 +138,6 @@ function initFAQAccordion() {
     });
 }
 
-/**
- * Initialize reveal on scroll animation
- */
 function initRevealOnScroll() {
     const revealElements = document.querySelectorAll('[data-reveal]');
     
@@ -175,9 +163,6 @@ function initRevealOnScroll() {
     });
 }
 
-/**
- * Initialize back to top button
- */
 function initBackToTop() {
     const backToTopBtn = document.querySelector('.back-to-top');
     
@@ -205,9 +190,6 @@ function initBackToTop() {
     }
 }
 
-/**
- * Initialize active navigation highlighting
- */
 function initActiveNav() {
     const navLinks = document.querySelectorAll('.nav-links a');
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
@@ -222,9 +204,6 @@ function initActiveNav() {
     });
 }
 
-/**
- * Initialize smooth scroll for anchor links
- */
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -243,112 +222,6 @@ function initSmoothScroll() {
     });
 }
 
-/**
- * Initialize theme toggle (dark mode support)
- */
-function initThemeToggle() {
-    // Check for saved theme preference or default to light mode
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = savedTheme !== 'light' ? savedTheme : (prefersDark ? 'dark' : 'light');
-    
-    applyTheme(theme);
-    
-    // Listen for system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (localStorage.getItem('theme') === null) {
-            applyTheme(e.matches ? 'dark' : 'light');
-        }
-    });
-}
-
-/**
- * Apply theme to document
- */
-function applyTheme(theme) {
-    document.documentElement.style.colorScheme = theme;
-    localStorage.setItem('theme', theme);
-}
-
-/**
- * Initialize accessibility features
- */
-function initAccessibility() {
-    // Add skip to main content link
-    const skipLink = document.createElement('a');
-    skipLink.href = '#main';
-    skipLink.className = 'skip-to-main';
-    skipLink.textContent = 'Skip to main content';
-    document.body.insertBefore(skipLink, document.body.firstChild);
-    
-    // Add main landmark if not present
-    const main = document.querySelector('main');
-    if (main && !main.id) {
-        main.id = 'main';
-    }
-    
-    // Ensure all images have alt text
-    document.querySelectorAll('img:not([alt])').forEach(img => {
-        img.setAttribute('alt', 'Image');
-    });
-    
-    // Add ARIA labels to buttons without text
-    document.querySelectorAll('button').forEach(btn => {
-        if (!btn.textContent.trim() && !btn.getAttribute('aria-label')) {
-            btn.setAttribute('aria-label', 'Button');
-        }
-    });
-    
-    // Set proper heading hierarchy
-    ensureHeadingHierarchy();
-}
-
-/**
- * Ensure proper heading hierarchy
- */
-function ensureHeadingHierarchy() {
-    const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-    let lastLevel = 0;
-    
-    headings.forEach(heading => {
-        const level = parseInt(heading.tagName[1]);
-        
-        // Warn if heading hierarchy is broken (in development)
-        if (level > lastLevel + 1 && lastLevel !== 0) {
-            console.warn(`Heading hierarchy broken: jumped from H${lastLevel} to H${level}`, heading);
-        }
-        
-        lastLevel = level;
-    });
-}
-
-/**
- * Initialize lazy loading for images
- */
-function initLazyLoading() {
-    if ('IntersectionObserver' in window) {
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    if (img.dataset.src) {
-                        img.src = img.dataset.src;
-                        img.removeAttribute('data-src');
-                    }
-                    observer.unobserve(img);
-                }
-            });
-        });
-        
-        document.querySelectorAll('img[data-src]').forEach(img => {
-            imageObserver.observe(img);
-        });
-    }
-}
-
-/**
- * Handle window resize events
- */
 function handleWindowResize() {
     let resizeTimer;
     

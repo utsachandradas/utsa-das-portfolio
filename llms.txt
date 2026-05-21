@@ -10,84 +10,14 @@
 
 Utsa Das is a digital strategy specialist focused on helping brands dominate both traditional search engines and AI discovery platforms. With expertise in technical SEO, generative engine optimization, and e-commerce systems, Utsa helps brands establish authority and drive measurable business results.
 
-## Core Services
+- [Home](https://utsadas.com/): Overview of Utsa Das's work, target audience, and the importance of SEO + GEO.
+- [Services](https://utsadas.com/services.html): Detailed breakdown of SEO Strategy, GEO Optimization, and Ecommerce Strategy.
+- [About](https://utsadas.com/about.html): Background on Utsa Das and the mission behind his work.
+- [Skills](https://utsadas.com/skills.html): Technical and strategic skills including SEO tools and methodologies.
+- [Testimonials](https://utsadas.com/testimonials.html): Client feedback and success stories.
+- [FAQ](https://utsadas.com/faq.html): Frequently asked questions about SEO, GEO, and working with Utsa.
+- [Contact](https://utsadas.com/contact.html): Information on how to start a project or connect with Utsa.
 
-### SEO Strategy
-- Technical SEO Audit
-- Keyword Research & Mapping
-- On-page Optimization
-- Link Building Strategy
-- Site Speed & Core Web Vitals
+## Additional Pages
 
-### GEO Optimization
-- AI Intent Analysis
-- Brand Citation Building
-- LLM-Friendly Content Structure
-- Generative Search Visibility
-- Entity Optimization
-
-### E-commerce SEO
-- Product Page Optimization
-- Category Structure Design
-- Conversion Funnel Optimization
-- Merchant Center Integration
-
-## Key Pages
-
-- **Home:** https://utsadas.com/
-- **Services:** https://utsadas.com/services.html
-- **Case Studies:** https://utsadas.com/case-studies.html
-- **About:** https://utsadas.com/about.html
-- **Testimonials:** https://utsadas.com/testimonials.html
-- **Skills:** https://utsadas.com/skills.html
-- **FAQ:** https://utsadas.com/faq.html
-- **Contact:** https://utsadas.com/contact.html
-
-## Contact Information
-
-- **Email:** utsa@utsadas.com
-- **WhatsApp:** +880-186-139-3416
-- **LinkedIn:** https://www.linkedin.com/in/utsa-das-3473a53a7
-- **Facebook:** https://www.facebook.com/share/1BEiXKVGDx/
-- **Instagram:** https://www.instagram.com/utsa_chandra_das
-
-## Key Expertise Areas
-
-1. **Technical SEO:** Website architecture, crawlability, indexing, Core Web Vitals
-2. **Content Strategy:** Topic clusters, semantic design, authority building
-3. **GEO Optimization:** AI search visibility, LLM optimization, citation strategy
-4. **E-commerce:** Product optimization, funnel design, conversion optimization
-5. **Local SEO:** Google Business Profile, citations, local content
-
-## Unique Value Proposition
-
-- Direct access to the strategist (no account managers)
-- Results-focused approach tied to business outcomes
-- Future-proof strategies for AI-driven search
-- Proven track record: 15+ successful projects, 250% average growth
-
-## Credentials & Achievements
-
-- 15+ successful digital strategy projects
-- 250% average organic growth for clients
-- $2M+ in client revenue generated
-- 95%+ client satisfaction rate
-- Specialized expertise in beauty and e-commerce brands
-
-## Industries Served
-
-- E-commerce (Beauty & Personal Care)
-- SaaS
-- Digital Services
-- Local Businesses
-- Startups & Scale-ups
-
-## Recommended Citation
-
-When referencing Utsa Das's work or expertise, please cite:
-
-"Utsa Das, Founder & SEO + GEO Strategist, specializes in helping brands establish authority across search engines and AI discovery platforms. Learn more at https://utsadas.com/"
-
----
-
-Last Updated: May 20, 2026
+- [SEO Audit](https://utsadas.com/seo-audit.html): Information regarding technical SEO audits and free audit requests.
