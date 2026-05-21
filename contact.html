@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Utsa Das - Start Your SEO & GEO Project</title>
-    <meta name="description" content="Get in touch with Utsa Das to discuss your search optimization and digital strategy projects.">
+    <title>Contact | Utsa Das - Let's Work Together</title>
+    <meta name="description" content="Get in touch with Utsa Das to discuss your SEO, GEO, and digital strategy needs. Direct communication, fast response, and strategic solutions.">
+    <meta name="keywords" content="Contact, SEO Consultation, Digital Strategy, Get in Touch">
     <meta name="author" content="Utsa Das">
     <link rel="canonical" href="https://utsadas.com/contact.html">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://utsadas.com/contact.html">
+    <meta property="og:title" content="Contact | Utsa Das - Let's Work Together">
+    <meta property="og:description" content="Get in touch with Utsa Das to discuss your SEO, GEO, and digital strategy needs.">
+    <meta property="og:image" content="https://utsadas.com/assets/images/utsa.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://utsadas.com/contact.html">
+    <meta name="twitter:title" content="Contact | Utsa Das - Let's Work Together">
+    <meta name="twitter:description" content="Get in touch with Utsa Das to discuss your SEO, GEO, and digital strategy needs.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -17,20 +31,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Schema Markup - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://utsadas.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://utsadas.com/contact.html"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Schema Markup - ContactPoint -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "telephone": "+880-186-139-3416",
+      "url": "https://utsadas.com/contact.html"
+    }
+    </script>
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="logo">Utsa Das</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="Utsa Das - Home">Utsa Das</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
-        <div class="mobile-toggle">
+        <div class="mobile-toggle" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -38,44 +86,214 @@
     </nav>
 
     <main>
-        <section>
-            <h1 class="section-title" data-reveal>Let's Work Together</h1>
-            <p class="section-subtitle" data-reveal>Ready to optimize your brand for the future of search? Reach out directly and let's discuss your project.</p>
+        <!-- Page Header -->
+        <section aria-labelledby="page-title">
+            <h1 id="page-title" class="section-title" data-reveal>Let's Work Together</h1>
+            <p class="section-subtitle" data-reveal>
+                Ready to optimize your brand for the future of search? Reach out directly and let's discuss your project, goals, and how we can achieve measurable results together.
+            </p>
         </section>
 
-        <section>
-            <div class="about-grid">
-                <div class="about-card" data-reveal>
-                    <h3>Direct Contact</h3>
-                    <p>For serious inquiries and business requests, I respond within 24 to 48 hours.</p>
-                    <div class="cta-group" style="margin-top: 2rem;">
-                        <a href="https://wa.me/8801861393416" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+        <!-- Contact Content -->
+        <section class="contact-section" aria-labelledby="contact-heading">
+            <h2 id="contact-heading" class="section-title" style="font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-3xl)); margin-bottom: var(--space-12);" data-reveal>
+                Get In Touch
+            </h2>
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper" data-reveal>
+                    <h3>Other Ways to Reach Me</h3>
+                    
+                    <div class="contact-info-card">
+                        <h4>WhatsApp (Fastest)</h4>
+                        <p>Get a quick response via WhatsApp</p>
+                        <a href="https://wa.me/8801861393416" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h4>Email</h4>
+                        <p>For detailed inquiries and documentation</p>
+                        <a href="mailto:utsa@utsadas.com" class="btn btn-secondary">
+                            Send Email
+                        </a>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h4>LinkedIn</h4>
+                        <p>Connect for professional networking</p>
+                        <a href="https://www.linkedin.com/in/utsa-das-3473a53a7" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            View Profile
+                        </a>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h4>Response Time</h4>
+                        <p>I typically respond within 24 hours during business days</p>
+                    </div>
+
+                    <div class="contact-info-card highlight">
+                        <h4>🎯 Direct Access</h4>
+                        <p>You'll work directly with me, not account managers. Faster decisions, better alignment, and strategic thinking.</p>
                     </div>
                 </div>
-                <div class="about-card" data-reveal>
-                    <h3>Professional Networks</h3>
-                    <p>Connect with me on professional platforms to stay updated on search trends and my latest work.</p>
-                    <ul style="margin-top: 1.5rem;">
-                        <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                        <li><a href="https://www.facebook.com/share/1BEiXKVGDx/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/utsa_chandra_das" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    </ul>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper" data-reveal>
+                    <h3>Send a Message</h3>
+                    <form class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required aria-required="true" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-required="true" placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Your company name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="website">Website</label>
+                            <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interest *</label>
+                            <select id="service" name="service" required aria-required="true">
+                                <option value="">Select a service</option>
+                                <option value="seo">SEO Strategy</option>
+                                <option value="geo">GEO Optimization</option>
+                                <option value="ecommerce">E-commerce SEO</option>
+                                <option value="content">Content Strategy</option>
+                                <option value="audit">Technical Audit</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell Me About Your Project *</label>
+                            <textarea id="message" name="message" required aria-required="true" rows="6" placeholder="Describe your goals, current situation, and what you're looking to achieve..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="consent" name="consent" required aria-required="true">
+                            <label for="consent">I agree to be contacted about my inquiry</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Send Message
+                        </button>
+                    </form>
                 </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" aria-labelledby="faq-heading">
+            <h2 id="faq-heading" class="section-title" data-reveal>Frequently Asked Questions</h2>
+            <p class="section-subtitle" data-reveal>
+                Quick answers to common questions about working together.
+            </p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What's your typical project timeline?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most projects show measurable results within 3-6 months. However, timelines vary based on project scope, current website state, and market competition. I'll provide a realistic timeline during our initial consultation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do you charge for services?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I offer flexible engagement models: project-based pricing, monthly retainers, and performance-based arrangements. We'll discuss what works best for your budget and goals during our consultation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you work with international clients?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! I work with clients globally. Time zone differences aren't an issue—we can schedule calls that work for both of us, and communication is primarily through email and messaging platforms.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What if my website is brand new?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>New websites are actually ideal! We can build SEO and GEO optimization into the foundation from day one, ensuring proper structure, schema markup, and content strategy from the start.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do you measure success?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Success is measured by business outcomes: organic traffic growth, lead generation, revenue impact, and keyword rankings. I provide transparent reporting tied to your specific goals and KPIs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can you help with existing websites?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Whether your site needs optimization, a redesign, or a complete SEO overhaul, I can help. I start with a comprehensive audit to identify opportunities and issues.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" data-reveal aria-labelledby="final-cta-title">
+            <h2 id="final-cta-title">Ready to Start?</h2>
+            <p>Let's have a conversation about your goals and how I can help you achieve them.</p>
+            <div class="cta-group" style="justify-content: center; margin-top: var(--space-10);">
+                <a href="#contact-heading" class="btn btn-primary" aria-label="Scroll to contact form">
+                    Send a Message
+                </a>
+                <a href="https://wa.me/8801861393416" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact me on WhatsApp">
+                    Quick Chat on WhatsApp
+                </a>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="footer-grid">
             <div class="footer-section">
                 <h3>Utsa Das</h3>
                 <p>Founder | SEO & GEO Strategist</p>
+                <p style="font-size: var(--font-size-sm); margin-top: var(--space-4);">
+                    Helping brands navigate the transition from traditional search to AI-driven discovery.
+                </p>
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
-                <ul style="display: flex; flex-direction: column; gap: 0.8rem;">
+                <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="about.html">About</a></li>
@@ -85,19 +303,233 @@
             </div>
             <div class="footer-section">
                 <h3>Connect</h3>
-                <ul style="display: flex; flex-direction: column; gap: 0.8rem;">
+                <ul class="footer-links">
                     <li><a href="https://www.facebook.com/share/1BEiXKVGDx/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                     <li><a href="https://www.instagram.com/utsa_chandra_das" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                     <li><a href="https://wa.me/8801861393416" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Utsa Das. All rights reserved.</p>
+            <p>&copy; 2026 Utsa Das. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <style>
+        /* Contact Section */
+        .contact-section {
+            margin: var(--space-20) 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-12);
+            margin-top: var(--space-12);
+        }
+
+        /* Contact Form */
+        .contact-form-wrapper {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+        }
+
+        .contact-form-wrapper h3 {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-6);
+            color: var(--text-primary);
+        }
+
+        .form-group {
+            margin-bottom: var(--space-6);
+        }
+
+        .form-group label {
+            display: block;
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            margin-bottom: var(--space-2);
+            color: var(--text-primary);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: var(--space-3) var(--space-4);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-family: var(--font-family-base);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .form-group.checkbox {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+        }
+
+        .form-group.checkbox input {
+            width: auto;
+            margin: 0;
+        }
+
+        .form-group.checkbox label {
+            margin: 0;
+        }
+
+        /* Contact Info */
+        .contact-info-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-6);
+        }
+
+        .contact-info-wrapper h3 {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-2);
+            color: var(--text-primary);
+        }
+
+        .contact-info-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: var(--space-6);
+            transition: var(--transition);
+        }
+
+        .contact-info-card:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-info-card.highlight {
+            background: linear-gradient(135deg, var(--accent-primary) 0%, #0052cc 100%);
+            color: white;
+            border: none;
+        }
+
+        .contact-info-card h4 {
+            font-size: var(--font-size-base);
+            margin-bottom: var(--space-2);
+            color: inherit;
+        }
+
+        .contact-info-card p {
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-4);
+            color: inherit;
+            opacity: 0.9;
+        }
+
+        .contact-info-card .btn {
+            width: 100%;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin: var(--space-20) 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: var(--space-12) auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+
+        .faq-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-item.active {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: var(--space-6);
+            background: var(--bg-secondary);
+            border: none;
+            cursor: pointer;
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--text-primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .faq-icon {
+            display: inline-block;
+            transition: transform var(--transition);
+            font-size: var(--font-size-lg);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            padding: var(--space-6);
+            color: var(--text-secondary);
+            line-height: var(--line-height-relaxed);
+            font-size: var(--font-size-sm);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form-wrapper,
+            .contact-info-wrapper {
+                padding: var(--space-6);
+            }
+        }
+    </style>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
