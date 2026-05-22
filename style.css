@@ -494,6 +494,14 @@ section {
     transform: translateY(-2px);
 }
 
+.cta-section {
+    padding: 4rem 0;
+}
+
+.cta-section .container {
+    text-align: center;
+}
+
 .cta-group {
     display: flex;
     gap: 1rem;
@@ -759,12 +767,16 @@ section {
    ============================================ */
 
 .faq-section {
-    padding: 8rem 0;
+    padding: 4rem 0;
+}
+
+.faq-section .container {
+    max-width: 800px;
 }
 
 .faq-container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 2rem;
 }
 
 .faq-item {
@@ -798,12 +810,13 @@ section {
     color: var(--text-secondary);
     flex-shrink: 0;
     margin-left: 1rem;
+    display: inline-block;
 }
 
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: var(--transition);
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .faq-answer p {
@@ -812,11 +825,11 @@ section {
 }
 
 .faq-item.active .faq-answer {
-    max-height: 500px;
+    max-height: 800px;
 }
 
 .faq-item.active .faq-icon {
-    transform: rotate(45deg);
+    transform: rotate(180deg);
     color: var(--accent-primary);
 }
 
@@ -952,6 +965,12 @@ footer {
    ============================================ */
 
 /* Service Cards */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
 .service-card,
 .services-grid .glass-card {
     background: var(--card-bg);
@@ -1165,9 +1184,10 @@ footer {
 /* Results Summary */
 .results-summary {
     background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
-    border-radius: 24px;
+}
+
+.results-summary .container {
     padding: 3rem 2rem;
-    margin: 3rem 0;
 }
 
 .results-grid {
