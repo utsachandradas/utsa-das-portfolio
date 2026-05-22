@@ -185,16 +185,18 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="cta-section" data-reveal aria-labelledby="final-cta-title">
-            <h2 id="final-cta-title">Ready to Start?</h2>
-            <p>Let's have a conversation about your goals and how I can help you achieve them.</p>
-            <div class="cta-group" style="justify-content: center; margin-top: var(--space-10);">
-                <a href="#contact-heading" class="btn btn-primary" aria-label="Scroll to contact form">
-                    Send a Message
-                </a>
-                <a href="https://wa.me/8801861393416" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact me on WhatsApp">
-                    Quick Chat on WhatsApp
-                </a>
+        <section data-reveal aria-labelledby="final-cta-title">
+            <div class="container" style="text-align: center;">
+                <h2 id="final-cta-title" class="gradient-text">Ready to Start?</h2>
+                <p style="max-width: 600px; margin: 1rem auto 2rem;">Let's have a conversation about your goals and how I can help you achieve them.</p>
+                <div class="cta-group" style="justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary" aria-label="Contact form">
+                        Send a Message
+                    </a>
+                    <a href="https://wa.me/8801861393416" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact me on WhatsApp">
+                        Quick Chat on WhatsApp
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -237,219 +239,7 @@
         </div>
     </footer>
 
-    <style>
-        /* Contact Section */
-        .contact-section {
-            margin: var(--space-20) 0;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-12);
-            margin-top: var(--space-12);
-        }
-
-        /* Contact Form */
-        .contact-form-wrapper {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: var(--space-8);
-        }
-
-        .contact-form-wrapper h3 {
-            font-size: var(--font-size-lg);
-            margin-bottom: var(--space-6);
-            color: var(--text-primary);
-        }
-
-        .form-group {
-            margin-bottom: var(--space-6);
-        }
-
-        .form-group label {
-            display: block;
-            font-size: var(--font-size-sm);
-            font-weight: 600;
-            margin-bottom: var(--space-2);
-            color: var(--text-primary);
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: var(--space-3) var(--space-4);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            font-size: var(--font-size-sm);
-            font-family: var(--font-family-base);
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            transition: var(--transition);
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--accent-primary);
-            box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 150px;
-        }
-
-        .form-group.checkbox {
-            display: flex;
-            align-items: center;
-            gap: var(--space-3);
-        }
-
-        .form-group.checkbox input {
-            width: auto;
-            margin: 0;
-        }
-
-        .form-group.checkbox label {
-            margin: 0;
-        }
-
-        /* Contact Info */
-        .contact-info-wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-6);
-        }
-
-        .contact-info-wrapper h3 {
-            font-size: var(--font-size-lg);
-            margin-bottom: var(--space-2);
-            color: var(--text-primary);
-        }
-
-        .contact-info-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            padding: var(--space-6);
-            transition: var(--transition);
-        }
-
-        .contact-info-card:hover {
-            border-color: var(--accent-primary);
-            box-shadow: var(--shadow-md);
-        }
-
-        .contact-info-card.highlight {
-            background: linear-gradient(135deg, var(--accent-primary) 0%, #0052cc 100%);
-            color: white;
-            border: none;
-        }
-
-        .contact-info-card h4 {
-            font-size: var(--font-size-base);
-            margin-bottom: var(--space-2);
-            color: inherit;
-        }
-
-        .contact-info-card p {
-            font-size: var(--font-size-sm);
-            margin-bottom: var(--space-4);
-            color: inherit;
-            opacity: 0.9;
-        }
-
-        .contact-info-card .btn {
-            width: 100%;
-        }
-
-        /* FAQ Section */
-        .faq-section {
-            margin: var(--space-20) 0;
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: var(--space-12) auto 0;
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-4);
-        }
-
-        .faq-item {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            transition: var(--transition);
-        }
-
-        .faq-item.active {
-            border-color: var(--accent-primary);
-            box-shadow: var(--shadow-md);
-        }
-
-        .faq-question {
-            width: 100%;
-            padding: var(--space-6);
-            background: var(--bg-secondary);
-            border: none;
-            cursor: pointer;
-            font-size: var(--font-size-base);
-            font-weight: 600;
-            color: var(--text-primary);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: var(--transition);
-        }
-
-        .faq-question:hover {
-            background: var(--bg-tertiary);
-        }
-
-        .faq-icon {
-            display: inline-block;
-            transition: transform var(--transition);
-            font-size: var(--font-size-lg);
-        }
-
-        .faq-item.active .faq-icon {
-            transform: rotate(45deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height var(--transition);
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-        }
-
-        .faq-answer p {
-            padding: var(--space-6);
-            color: var(--text-secondary);
-            line-height: var(--line-height-relaxed);
-            font-size: var(--font-size-sm);
-        }
-
-        @media (max-width: 768px) {
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-form-wrapper,
-            .contact-info-wrapper {
-                padding: var(--space-6);
-            }
-        }
-    </style>
+    
 
     <script src="script.js" defer></script>
 </body>
