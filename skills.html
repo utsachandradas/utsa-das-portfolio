@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills | Utsa Das - Technical SEO & GEO Expertise</title>
     <meta name="description" content="Discover the technical skills and tools Utsa Das uses to drive digital growth and search authority.">
+    <meta name="keywords" content="Technical Skills, SEO Tools, GEO Tools, Digital Strategy">
     <meta name="author" content="Utsa Das">
     <link rel="canonical" href="https://utsadas.com/skills.html">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://utsadas.com/skills.html">
+    <meta property="og:title" content="Skills | Utsa Das - Technical SEO & GEO Expertise">
+    <meta property="og:description" content="Discover the technical skills and tools Utsa Das uses to drive digital growth and search authority.">
+    <meta property="og:image" content="https://utsadas.com/assets/images/utsa.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -16,21 +24,67 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Schema Markup - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://utsadas.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Skills",
+          "item": "https://utsadas.com/skills.html"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .expertise-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: var(--transition);
+            box-shadow: var(--card-shadow);
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--card-shadow-hover);
+            border-color: rgba(15, 23, 42, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="logo">Utsa Das</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="Utsa Das - Home">Utsa Das</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
             <li><a href="skills.html" class="active">Skills</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="mobile-toggle">
+        <div class="mobile-toggle" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -39,81 +93,105 @@
 
     <main>
         <section>
-            <h1 class="section-title" data-reveal>Technical Expertise</h1>
-            <p class="section-subtitle" data-reveal>A specialized toolkit designed for high-performance search optimization and AI discovery.</p>
+            <div class="container">
+                <h1 class="section-title reveal" data-reveal>Technical Expertise</h1>
+                <p class="section-subtitle reveal" data-reveal>A specialized toolkit designed for high-performance search optimization and AI discovery.</p>
+            </div>
         </section>
 
-        <section>
-            <h2 class="section-title" data-reveal>Tools I Use</h2>
-            <div class="tools-grid">
-                <div class="tool-card" data-reveal>
-                    <img src="assets/tools/gsc.png" alt="Google Search Console" class="tool-logo" loading="lazy" decoding="async">
-                    <p>Search Console</p>
-                </div>
-                <div class="tool-card" data-reveal>
-                    <img src="assets/tools/ga4.png" alt="Google Analytics 4" class="tool-logo" loading="lazy" decoding="async">
-                    <p>Analytics 4</p>
-                </div>
-                <div class="tool-card" data-reveal>
-                    <img src="assets/tools/ahrefs.png" alt="Ahrefs" class="tool-logo" loading="lazy" decoding="async">
-                    <p>Ahrefs</p>
-                </div>
-                <div class="tool-card" data-reveal>
-                    <img src="assets/tools/semrush.png" alt="Semrush" class="tool-logo" loading="lazy" decoding="async">
-                    <p>Semrush</p>
-                </div>
-                <div class="tool-card" data-reveal>
-                    <img src="assets/tools/screamingfrog.png" alt="Screaming Frog" class="tool-logo" loading="lazy" decoding="async">
-                    <p>Screaming Frog</p>
-                </div>
-                <div class="tool-card" data-reveal>
-                    <img src="assets/tools/surferseo.png" alt="Surfer SEO" class="tool-logo" loading="lazy" decoding="async">
-                    <p>Surfer SEO</p>
-                </div>
-                <div class="tool-card" data-reveal>
-                    <img src="assets/tools/shopify.png" alt="Shopify" class="tool-logo" loading="lazy" decoding="async">
-                    <p>Shopify</p>
-                </div>
-                <div class="tool-card" data-reveal>
-                    <img src="assets/tools/chatgpt.png" alt="ChatGPT" class="tool-logo" loading="lazy" decoding="async">
-                    <p>ChatGPT / AI</p>
+        <section class="bg-surface">
+            <div class="container">
+                <h2 class="section-title reveal" data-reveal>Tools I Use</h2>
+                <div class="tools-grid">
+                    <div class="tool-card reveal" data-reveal>
+                        <img src="assets/tools/gsc.png" alt="Google Search Console" class="tool-logo" loading="lazy" decoding="async">
+                        <p>Search Console</p>
+                    </div>
+                    <div class="tool-card reveal" data-reveal style="transition-delay: 0.1s;">
+                        <img src="assets/tools/ga4.png" alt="Google Analytics 4" class="tool-logo" loading="lazy" decoding="async">
+                        <p>Analytics 4</p>
+                    </div>
+                    <div class="tool-card reveal" data-reveal style="transition-delay: 0.2s;">
+                        <img src="assets/tools/ahrefs.png" alt="Ahrefs" class="tool-logo" loading="lazy" decoding="async">
+                        <p>Ahrefs</p>
+                    </div>
+                    <div class="tool-card reveal" data-reveal>
+                        <img src="assets/tools/semrush.png" alt="Semrush" class="tool-logo" loading="lazy" decoding="async">
+                        <p>Semrush</p>
+                    </div>
+                    <div class="tool-card reveal" data-reveal style="transition-delay: 0.1s;">
+                        <img src="assets/tools/screamingfrog.png" alt="Screaming Frog" class="tool-logo" loading="lazy" decoding="async">
+                        <p>Screaming Frog</p>
+                    </div>
+                    <div class="tool-card reveal" data-reveal style="transition-delay: 0.2s;">
+                        <img src="assets/tools/surferseo.png" alt="Surfer SEO" class="tool-logo" loading="lazy" decoding="async">
+                        <p>Surfer SEO</p>
+                    </div>
+                    <div class="tool-card reveal" data-reveal>
+                        <img src="assets/tools/shopify.png" alt="Shopify" class="tool-logo" loading="lazy" decoding="async">
+                        <p>Shopify</p>
+                    </div>
+                    <div class="tool-card reveal" data-reveal style="transition-delay: 0.1s;">
+                        <img src="assets/tools/chatgpt.png" alt="ChatGPT" class="tool-logo" loading="lazy" decoding="async">
+                        <p>ChatGPT / AI</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="expertise-grid">
-                <div class="expertise-card" data-reveal>
-                    <h3>Technical SEO</h3>
-                    <p>Deep understanding of crawlability, indexing, site architecture, and performance optimization for modern web frameworks.</p>
+            <div class="container">
+                <h2 class="section-title reveal" data-reveal>Areas of Expertise</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-card reveal" data-reveal>
+                        <h3>Technical SEO</h3>
+                        <p>Deep understanding of crawlability, indexing, site architecture, and performance optimization for modern web frameworks.</p>
+                    </div>
+                    <div class="expertise-card reveal" data-reveal style="transition-delay: 0.1s;">
+                        <h3>GEO Optimization</h3>
+                        <p>Specialized knowledge in optimizing content for LLM-based search engines and generative AI platforms.</p>
+                    </div>
+                    <div class="expertise-card reveal" data-reveal style="transition-delay: 0.2s;">
+                        <h3>Content Strategy</h3>
+                        <p>Designing semantic content networks and topic clusters that establish unparalleled topical authority.</p>
+                    </div>
+                    <div class="expertise-card reveal" data-reveal>
+                        <h3>Data Analytics</h3>
+                        <p>Transforming complex search data into actionable business insights and growth strategies.</p>
+                    </div>
                 </div>
-                <div class="expertise-card" data-reveal>
-                    <h3>GEO Optimization</h3>
-                    <p>Specialized knowledge in optimizing content for LLM-based search engines and generative AI platforms.</p>
-                </div>
-                <div class="expertise-card" data-reveal>
-                    <h3>Content Strategy</h3>
-                    <p>Designing semantic content networks and topic clusters that establish unparalleled topical authority.</p>
-                </div>
-                <div class="expertise-card" data-reveal>
-                    <h3>Data Analytics</h3>
-                    <p>Transforming complex search data into actionable business insights and growth strategies.</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-surface reveal" data-reveal>
+            <div class="container" style="text-align: center;">
+                <h2 class="gradient-text">Ready to Leverage These Skills?</h2>
+                <p style="max-width: 600px; margin: 1rem auto 2rem;">Let's discuss how I can apply these tools and expertise to your project.</p>
+                <div class="cta-group" style="justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary">Start a Collaboration</a>
+                    <a href="https://wa.me/8801861393416" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="footer-grid">
             <div class="footer-section">
                 <h3>Utsa Das</h3>
                 <p>Founder | SEO & GEO Strategist</p>
+                <p style="font-size: var(--font-size-sm); margin-top: var(--space-4);">
+                    Helping brands navigate the transition from traditional search to AI-driven discovery.
+                </p>
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="about.html">About</a></li>
@@ -126,16 +204,16 @@
                 <ul>
                     <li><a href="https://www.facebook.com/share/1BEiXKVGDx/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                     <li><a href="https://www.instagram.com/utsa_chandra_das" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                     <li><a href="https://wa.me/8801861393416" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Utsa Das. All rights reserved.</p>
+            <p>&copy; 2026 Utsa Das. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

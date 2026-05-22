@@ -7,6 +7,7 @@
     <title>Free SEO Audit Request | Utsa Das - SEO Strategist Bangladesh</title>
     <meta name="description" content="Request a comprehensive SEO audit from Utsa Das. Identify growth opportunities and competitive gaps in your website.">
     <meta name="keywords" content="free SEO audit, SEO analysis, website audit">
+    <meta name="author" content="Utsa Das">
     <link rel="canonical" href="https://utsadas.com/seo-audit.html">
 
     <!-- Open Graph Meta Tags -->
@@ -14,6 +15,7 @@
     <meta property="og:url" content="https://utsadas.com/seo-audit.html">
     <meta property="og:title" content="Free SEO Audit Request | Utsa Das">
     <meta property="og:description" content="Request a comprehensive SEO audit from Utsa Das. Identify growth opportunities and competitive gaps.">
+    <meta property="og:image" content="https://utsadas.com/assets/images/utsa.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -23,9 +25,31 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Schema Markup -->
+    <!-- Schema Markup - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://utsadas.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Free SEO Audit",
+          "item": "https://utsadas.com/seo-audit.html"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Schema Markup - Service -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,7 +72,7 @@
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 600;
-            color: #ffffff;
+            color: var(--text-primary);
         }
 
         .form-group input,
@@ -56,10 +80,10 @@
         .form-group select {
             width: 100%;
             padding: 12px;
-            border: 1px solid var(--glass-border);
+            border: 1px solid var(--card-border);
             border-radius: 8px;
-            background: var(--glass-bg);
-            color: #ffffff;
+            background: var(--card-bg);
+            color: var(--text-primary);
             font-family: inherit;
             font-size: 1rem;
             transition: var(--transition);
@@ -69,8 +93,8 @@
         .form-group textarea:focus,
         .form-group select:focus {
             outline: none;
-            border-color: var(--accent-color);
-            background: rgba(0, 112, 243, 0.1);
+            border-color: var(--accent-primary);
+            background: rgba(79, 70, 229, 0.05);
         }
 
         .form-group textarea {
@@ -81,10 +105,11 @@
         .form-container {
             max-width: 700px;
             margin: 0 auto;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
             padding: 3rem;
             border-radius: 16px;
+            box-shadow: var(--card-shadow);
         }
 
         .form-submit {
@@ -95,15 +120,16 @@
             font-weight: 600;
             font-size: 1rem;
             cursor: pointer;
-            background: var(--text-color);
-            color: var(--bg-color);
+            background: var(--accent-primary);
+            color: #ffffff;
             transition: var(--transition);
+            box-shadow: 0 4px 14px 0 rgba(79, 70, 229, 0.39);
         }
 
         .form-submit:hover {
-            background: #ffffff;
+            background: #4338ca;
             transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(255, 255, 255, 0.15);
+            box-shadow: 0 6px 20px rgba(79, 70, 229, 0.5);
         }
 
         .audit-benefits {
@@ -114,175 +140,210 @@
         }
 
         .benefit-card {
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
             padding: 2rem;
             border-radius: 16px;
             text-align: center;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--card-shadow-hover);
         }
 
         .benefit-card h3 {
             margin-bottom: 1rem;
-            color: var(--accent-color);
+            color: var(--accent-primary);
         }
     </style>
 </head>
 <body>
 
-    <div class="bg-gradient">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-    </div>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Utsa Das.</a>
+            
+            <!-- Desktop Links -->
+            <div class="nav-links desktop-only">
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="contact.html" class="btn-nav">Let's Talk</a>
+            </div>
 
-    <nav>
-        <a href="index.html" class="logo">Utsa Das</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="mobile-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+            <!-- Hamburger Button for Mobile -->
+            <button class="menu-toggle mobile-only" aria-label="Toggle Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div class="mobile-menu mobile-only">
+            <div class="mobile-menu-links">
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="services.html" class="mobile-nav-link">Services</a>
+                <a href="case-studies.html" class="mobile-nav-link">Case Studies</a>
+                <a href="testimonials.html" class="mobile-nav-link">Testimonials</a>
+                <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                <a href="contact.html" class="btn-nav mobile-nav-link">Let's Talk</a>
+            </div>
         </div>
     </nav>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero seo-audit-hero">
-            <div class="hero-content" data-reveal>
+        <header class="hero">
+            <div class="container reveal">
                 <h1>Free SEO Audit</h1>
-                <h2>Discover Your Growth Opportunities</h2>
+                <p>Discover Your Growth Opportunities</p>
                 <p class="hero-tagline">Get a comprehensive analysis of your website's SEO performance.</p>
+                <div class="btn-group">
+                    <a href="#form" class="btn btn-primary">Request Audit</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                </div>
             </div>
-        </section>
+        </header>
 
         <!-- Benefits Section -->
-        <section>
-            <h2 class="section-title" data-reveal>What You'll Get</h2>
-            <div class="audit-benefits">
-                <div class="benefit-card" data-reveal>
-                    <h3>Technical Analysis</h3>
-                    <p>Identify technical SEO issues affecting your rankings and user experience.</p>
-                </div>
-                <div class="benefit-card" data-reveal>
-                    <h3>On-Page Review</h3>
-                    <p>Analyze your content optimization and keyword targeting strategy.</p>
-                </div>
-                <div class="benefit-card" data-reveal>
-                    <h3>Backlink Analysis</h3>
-                    <p>Review your link profile and identify link-building opportunities.</p>
-                </div>
-                <div class="benefit-card" data-reveal>
-                    <h3>Competitor Insights</h3>
-                    <p>See how your competitors rank and what strategies they're using.</p>
-                </div>
-                <div class="benefit-card" data-reveal>
-                    <h3>Actionable Recommendations</h3>
-                    <p>Get specific, prioritized recommendations to improve your rankings.</p>
-                </div>
-                <div class="benefit-card" data-reveal>
-                    <h3>Growth Roadmap</h3>
-                    <p>Receive a strategic plan to achieve your SEO goals.</p>
+        <section id="benefits" class="bg-surface">
+            <div class="container">
+                <h2 class="reveal gradient-text">What You'll Get</h2>
+                <div class="audit-benefits">
+                    <div class="benefit-card reveal">
+                        <h3>Technical Analysis</h3>
+                        <p>Identify technical SEO issues affecting your rankings and user experience.</p>
+                    </div>
+                    <div class="benefit-card reveal" style="transition-delay: 0.1s;">
+                        <h3>On-Page Review</h3>
+                        <p>Analyze your content optimization and keyword targeting strategy.</p>
+                    </div>
+                    <div class="benefit-card reveal" style="transition-delay: 0.2s;">
+                        <h3>Backlink Analysis</h3>
+                        <p>Review your link profile and identify link-building opportunities.</p>
+                    </div>
+                    <div class="benefit-card reveal">
+                        <h3>Competitor Insights</h3>
+                        <p>See how your competitors rank and what strategies they're using.</p>
+                    </div>
+                    <div class="benefit-card reveal" style="transition-delay: 0.1s;">
+                        <h3>Actionable Recommendations</h3>
+                        <p>Get specific, prioritized recommendations to improve your rankings.</p>
+                    </div>
+                    <div class="benefit-card reveal" style="transition-delay: 0.2s;">
+                        <h3>Growth Roadmap</h3>
+                        <p>Receive a strategic plan to achieve your SEO goals.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Form Section -->
-        <section>
-            <h2 class="section-title" data-reveal>Request Your Audit</h2>
-            <div class="form-container" data-reveal>
-                <form id="auditForm" method="POST" action="https://formspree.io/f/mzzzlzqb">
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
+        <section id="form">
+            <div class="container">
+                <h2 class="reveal gradient-text">Request Your Audit</h2>
+                <div class="form-container reveal">
+                    <form id="auditForm" method="POST" action="https://formspree.io/f/mzzzlzqb">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="company">Company Name</label>
-                        <input type="text" id="company" name="company">
-                    </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="website">Website URL *</label>
-                        <input type="url" id="website" name="website" placeholder="https://example.com" required>
-                    </div>
+                        <div class="form-group">
+                            <label for="website">Website URL *</label>
+                            <input type="url" id="website" name="website" placeholder="https://example.com" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="industry">Industry</label>
-                        <select id="industry" name="industry">
-                            <option value="">Select an industry</option>
-                            <option value="ecommerce">E-commerce</option>
-                            <option value="saas">SaaS</option>
-                            <option value="agency">Digital Agency</option>
-                            <option value="local">Local Business</option>
-                            <option value="blog">Blog/Content</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
+                        <div class="form-group">
+                            <label for="industry">Industry</label>
+                            <select id="industry" name="industry">
+                                <option value="">Select an industry</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="saas">SaaS</option>
+                                <option value="agency">Digital Agency</option>
+                                <option value="local">Local Business</option>
+                                <option value="blog">Blog/Content</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="message">Tell me about your SEO goals</label>
-                        <textarea id="message" name="message" placeholder="What are your main SEO challenges and goals?"></textarea>
-                    </div>
+                        <div class="form-group">
+                            <label for="message">Tell me about your SEO goals</label>
+                            <textarea id="message" name="message" placeholder="What are your main SEO challenges and goals?"></textarea>
+                        </div>
 
-                    <button type="submit" class="form-submit">Request Your Free Audit</button>
-                </form>
+                        <button type="submit" class="form-submit">Request Your Free Audit</button>
+                    </form>
+                </div>
             </div>
         </section>
 
         <!-- CTA Section -->
-        <section class="cta-section" data-reveal>
-            <h2>Questions About the Audit?</h2>
-            <p>Feel free to reach out directly for more information.</p>
-            <a href="contact.html" class="btn btn-primary">Contact Me</a>
+        <section class="cta-section reveal">
+            <div class="container" style="text-align: center;">
+                <h2>Questions About the Audit?</h2>
+                <p>Feel free to reach out directly for more information.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Me</a>
+            </div>
         </section>
+
         <!-- FAQ Section -->
-        <section id="faq">
-            <h2 class="section-title" data-reveal>FAQ</h2>
-            <div class="faq-container">
-                <div class="faq-item" data-reveal>
-                    <div class="faq-question">What is GEO (Generative Engine Optimization)? <span class="faq-icon">▼</span></div>
-                    <div class="faq-answer">GEO is the process of optimizing content so it can appear in AI-based search systems and generative answers.</div>
-                </div>
-                <div class="faq-item" data-reveal>
-                    <div class="faq-question">How is SEO different from GEO? <span class="faq-icon">▼</span></div>
-                    <div class="faq-answer">SEO focuses on Google rankings, while GEO focuses on visibility in AI-driven search engines.</div>
-                </div>
-                <div class="faq-item" data-reveal>
-                    <div class="faq-question">Do you work with ecommerce businesses? <span class="faq-icon">▼</span></div>
-                    <div class="faq-answer">Yes, especially in beauty and personal care niche systems.</div>
-                </div>
-                <div class="faq-item" data-reveal>
-                    <div class="faq-question">Can SEO improve sales? <span class="faq-icon">▼</span></div>
-                    <div class="faq-answer">Yes, by improving visibility, traffic quality, and conversion flow.</div>
+        <section id="faq" class="bg-surface">
+            <div class="container">
+                <h2 class="reveal gradient-text">FAQ</h2>
+                <div class="faq-container">
+                    <div class="faq-item reveal">
+                        <div class="faq-question">What is GEO (Generative Engine Optimization)? <span class="faq-icon">+</span></div>
+                        <div class="faq-answer">GEO is the process of optimizing content so it can appear in AI-based search systems and generative answers.</div>
+                    </div>
+                    <div class="faq-item reveal" style="transition-delay: 0.1s;">
+                        <div class="faq-question">How is SEO different from GEO? <span class="faq-icon">+</span></div>
+                        <div class="faq-answer">SEO focuses on Google rankings, while GEO focuses on visibility in AI-driven search engines.</div>
+                    </div>
+                    <div class="faq-item reveal" style="transition-delay: 0.2s;">
+                        <div class="faq-question">Do you work with ecommerce businesses? <span class="faq-icon">+</span></div>
+                        <div class="faq-answer">Yes, especially in beauty and personal care niche systems.</div>
+                    </div>
+                    <div class="faq-item reveal" style="transition-delay: 0.3s;">
+                        <div class="faq-question">Can SEO improve sales? <span class="faq-icon">+</span></div>
+                        <div class="faq-answer">Yes, by improving visibility, traffic quality, and conversion flow.</div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="footer-grid">
             <div class="footer-section">
                 <h3>Utsa Das</h3>
                 <p>Founder | SEO & GEO Strategist</p>
-                <p>Helping brands dominate search engines and AI platforms.</p>
+                <p style="font-size: var(--font-size-sm); margin-top: var(--space-4);">
+                    Helping brands navigate the transition from traditional search to AI-driven discovery.
+                </p>
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="about.html">About</a></li>
@@ -295,16 +356,16 @@
                 <ul>
                     <li><a href="https://www.facebook.com/share/1BEiXKVGDx/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                     <li><a href="https://www.instagram.com/utsa_chandra_das" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/utsa-das-3473a53a7" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                     <li><a href="https://wa.me/8801861393416" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Utsa Das. All rights reserved.</p>
+            <p>&copy; 2026 Utsa Das. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
